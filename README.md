@@ -3,13 +3,12 @@
 This repository contains selected **machine learning (ML)** and **deep learning (DL)** projects focused on **image classification**, **model benchmarking**, and **efficient CNN deployment**.  
 The projects emphasize **systematic comparison between traditional ML pipelines and modern deep learning models**, with reproducible experiments and clear performance analysis.
 
----
+
 ## Tech Stack
 - Python, PyTorch, scikit-learn
 - OpenCV, NumPy, Matplotlib
 - CNN fine-tuning and transfer learning
 
----
 
 
 
