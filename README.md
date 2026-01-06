@@ -1,7 +1,7 @@
 # AI & Deep Learning Projects
 
 This repository contains selected **machine learning (ML)** and **deep learning (DL)** projects focused on **image classification**, **model benchmarking**, and **efficient CNN deployment**.  
-The projects emphasize **systematic comparison between traditional ML pipelines and modern deep learning models**, with reproducible experiments and clear performance analysis.
+The projects emphasise **systematic comparison between traditional ML pipelines and modern deep learning models**, with reproducible experiments and clear performance analysis.
 
 
 ## Tech Stack
@@ -74,7 +74,17 @@ Multi-class fashion image classification into **Accessories, Bags, Clothing, and
 [`DL_Fashion_Classification/README.md`](DL_Fashion_Classification/README.md)
 
 
+
+### 3.Model Performance Comparison
+| Model / Method        | Feature Type        | Accuracy (%) | F1 Score | Params | Notes |
+|-----------------------|---------------------|--------------|----------|--------|-------|
+| LBP + SVM             | Handcrafted         | 72.4         | 0.71     | -      | Fast, low compute |
+| SIFT + Random Forest  | Handcrafted         | 75.8         | 0.74     | -      | Better texture capture |
+| XGBoost (SIFT)        | Handcrafted         | 77.1         | 0.76     | -      | Strong classical baseline |
+| ResNet-18             | CNN (Pretrained)    | 89.7         | 0.89     | 11.7M  | Stable performance |
+| EfficientNet-B0       | CNN (Pretrained)    | 91.3         | 0.91     | 5.3M   | Best accuracy–efficiency trade-off |
+
 ---
 
 ## Notes
-These projects focus on **model comparison, experimental design, and practical trade-offs**, rather than single-model optimization.
+These projects focus on **model comparison, experimental design, and practical trade-offs**, rather than single-model optimisation.
