@@ -43,7 +43,7 @@ Compare handcrafted-feature-based ML approaches with CNN-based deep learning mod
 📄 Detailed experiments and benchmarks:  
 [`ML_vs_DL_Comparison/README.md`](ML_vs_DL_Comparison/README.md)
 
----
+
 
 ### 2. Fashion Image Classification (Deep Learning)
 
