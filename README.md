@@ -20,16 +20,16 @@ The projects emphasise **systematic comparison between traditional ML pipelines 
 **Objective**  
 Compare handcrafted-feature-based ML approaches with CNN-based deep learning models for multi-class aerial image classification.
 
-**Dataset**
+**Dataset:**
 - 12,000 images, **15 balanced classes**
 - Resolution: 256 × 256  
 - Categories include Airport, Forest, City, Residential, etc.
 
-**Methods**
+**Methods:**
 - **Traditional ML**
   - Feature extraction: LBP, SIFT
   - Classifiers: KNN, SVM, Random Forest, XGBoost
-- **Deep Learning**
+- **Deep Learning:**
   - ResNet-18
   - EfficientNet-B0 (ImageNet pretrained)
 - 5-fold cross-validation
@@ -47,20 +47,20 @@ Compare handcrafted-feature-based ML approaches with CNN-based deep learning mod
 
 ### 2. Fashion Image Classification (Deep Learning)
 
-**Task**  
+**Task:**  
 Multi-class fashion image classification into **Accessories, Bags, Clothing, and Shoes** using pretrained CNN architectures.
 
-**Dataset**
+**Dataset:**
 - 8,000 images (2,000 per class)
 - Balanced data augmentation
 
-**Models**
+**Models:**
 - MobileNetV2  
 - ResNet18  
 - ResNet50  
 - EfficientNet-B0  
 
-**Training & Evaluation**
+**Training & Evaluation:**
 - 5-fold cross-validation
 - Adam optimiser with early stopping
 - Metrics: Accuracy, F1-score, mAP
