@@ -1,34 +1,81 @@
-# AI_Projects
+# AI & Deep Learning Projects
 
-This repository showcases selected coursework and personal projects in **machine learning (ML)** and **deep learning (DL)**, with a primary focus on **image classification, model performance comparison**, and **efficient deep learning deployment**.
-The overall emphasis is on image classification, model evaluation, and transfer learning experiments.
+This repository contains selected **machine learning (ML)** and **deep learning (DL)** projects focused on **image classification**, **model benchmarking**, and **efficient CNN deployment**.  
+The projects emphasize **systematic comparison between traditional ML pipelines and modern deep learning models**, with reproducible experiments and clear performance analysis.
+
+---
+## Tech Stack
+- Python, PyTorch, scikit-learn
+- OpenCV, NumPy, Matplotlib
+- CNN fine-tuning and transfer learning
+
+---
+
+
 
 ## Projects Overview
 
-### 1. ML vs DL: Aerial Image Classification | 传统 ML 与 DL 对比：遥感图像分类
-- **Folder:** `ML_vs_DL_Comparison`
-- **Goal:**  
-Classify aerial images into **15 landscape categories** (e.g., Airport, Forest, City) using both **traditional ML techniques** (e.g., LBP, SIFT with KNN/SVM/Random Forest/XGBoost) and **modern deep learning architectures** (ResNet-18, EfficientNet-B0).
-- **Key Highlights:**  
-  - Dataset: Algorithms: LBP, SIFT + KNN / SVM / Random Forest / XGBoost
-  - Deep Learning Models: ResNet-18, EfficientNet-B0
-  - Dataset: 12,000 balanced images (15 categories, 256×256 px)
-  - Methods: 5-fold cross-validation, data augmentation, transfer learning (ImageNet pretrained)
-- Findings: Deep models achieve higher accuracy and robustness; EfficientNet-B0 offers the best trade-off between accuracy and efficiency.
-- **For implementation details and performance reports, see:**  [`ML_vs_DL_Comparison/README.md`](ML_vs_DL_Comparison/README.md)
+### 1. ML vs DL: Aerial Image Classification  
+**Traditional Machine Learning vs Deep Learning on Remote Sensing Images**
+
+**Objective**  
+Compare handcrafted-feature-based ML approaches with CNN-based deep learning models for multi-class aerial image classification.
+
+**Dataset**
+- 12,000 images, **15 balanced classes**
+- Resolution: 256 × 256  
+- Categories include Airport, Forest, City, Residential, etc.
+
+**Methods**
+- **Traditional ML**
+  - Feature extraction: LBP, SIFT
+  - Classifiers: KNN, SVM, Random Forest, XGBoost
+- **Deep Learning**
+  - ResNet-18
+  - EfficientNet-B0 (ImageNet pretrained)
+- 5-fold cross-validation
+- Data augmentation and transfer learning
+
+**Key Findings**
+- Deep learning models outperform traditional ML in accuracy and robustness
+- EfficientNet-B0 provides the **best accuracy–efficiency trade-off**
+- Traditional ML remains viable under limited computational resources
+
+📄 Detailed experiments and benchmarks:  
+[`ML_vs_DL_Comparison/README.md`](ML_vs_DL_Comparison/README.md)
+
+---
+
+### 2. Fashion Image Classification (Deep Learning)
+
+**Task**  
+Multi-class fashion image classification into **Accessories, Bags, Clothing, and Shoes** using pretrained CNN architectures.
+
+**Dataset**
+- 8,000 images (2,000 per class)
+- Balanced data augmentation
+
+**Models**
+- MobileNetV2  
+- ResNet18  
+- ResNet50  
+- EfficientNet-B0  
+
+**Training & Evaluation**
+- 5-fold cross-validation
+- Adam optimiser with early stopping
+- Metrics: Accuracy, F1-score, mAP
+- Robustness evaluation under Gaussian noise
+
+**Key Findings**
+- Lightweight models achieve comparable accuracy to deeper networks
+- EfficientNet-B0 shows the strongest robustness with lower computational cost
+
+📄 Full methodology and results:  
+[`DL_Fashion_Classification/README.md`](DL_Fashion_Classification/README.md)
 
 
-### 2. Fashion Classification (Deep Learning) | 基于深度学习的时尚分类
-- **Folder:** `DL_Fashion_Classification`
-- **Description:**  
-  This project performs multi-class classification of fashion images into **four categories** — Accessories, Bags, Clothing, and Shoes — using **pretrained convolutional neural networks**.
-    
-- **Key Highlights:**  
-  - Models: MobileNetV2, ResNet18, ResNet50, EfficientNet-B0
-  - Dataset: 8,000 augmented images (2,000 per class)
-  - Techniques: Balanced augmentation, 5-fold cross-validation, Adam optimiser with early stopping
-  - Evaluation: Accuracy, F1 score, mean average precision (mAP)
+---
 
-- Findings: Lightweight CNNs (MobileNetV2, EfficientNet-B0) achieve comparable accuracy with lower computation; EfficientNet-B0 shows highest robustness under Gaussian noise.
-- **Detailed methodology and experiment results are provided in** [`DL_Fashion_Classification/README.md`](DL_Fashion_Classification/README.md)
-
+## Notes
+These projects focus on **model comparison, experimental design, and practical trade-offs**, rather than single-model optimization.
