@@ -45,6 +45,8 @@ Compare handcrafted-feature-based ML approaches with CNN-based deep learning mod
 
 
 
+
+
 ### 2. Fashion Image Classification (Deep Learning)
 
 **Task:**  
@@ -75,6 +77,8 @@ Multi-class fashion image classification into **Accessories, Bags, Clothing, and
 
 
 
+
+
 ### 3.Model Performance Comparison
 | Model / Method        | Feature Type        | Accuracy (%) | F1 Score | Params | Notes |
 |-----------------------|---------------------|--------------|----------|--------|-------|
@@ -83,6 +87,9 @@ Multi-class fashion image classification into **Accessories, Bags, Clothing, and
 | XGBoost (SIFT)        | Handcrafted         | 77.1         | 0.76     | -      | Strong classical baseline |
 | ResNet-18             | CNN (Pretrained)    | 89.7         | 0.89     | 11.7M  | Stable performance |
 | EfficientNet-B0       | CNN (Pretrained)    | 91.3         | 0.91     | 5.3M   | Best accuracy–efficiency trade-off |
+
+
+
 
 ---
 
